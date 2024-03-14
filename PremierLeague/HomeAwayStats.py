@@ -10,13 +10,10 @@ print(TotalHomeWins)
 print(TotalAwayWins)
 print(TotalDraws)
 
-explode = (0.1, 0, 0)
-
 y = np.array([TotalHomeWins, TotalDraws, TotalAwayWins])
 mylabels = ["Home Wins", "Draws", "Away Wins"]
-
-#Fix legend
-plt.legend(title = "Results", loc = "upper right", bbox_to_anchor = (1, 0, 0.5, 1), labels = mylabels, shadow = True, fontsize = "small")
-
+plt.title('Percentage of Home Wins, Away Wins, and Draws')
 plt.pie(y, labels = mylabels, autopct='%1.1f%%', startangle=90, shadow=True)
 plt.show() 
+
+print(df)

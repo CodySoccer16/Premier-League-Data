@@ -17,7 +17,6 @@ plt.xticks = (x, my_xticks)
 plt.xlabel('Team')
 plt.ylabel('Goals Scored')
 plt.title('Goals scored for each Premier League Teams')
-plt.xticks(rotation=45, ha='right')
 plt.plot(my_xticks, y)
 plt.show()
 """
