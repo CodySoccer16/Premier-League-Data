@@ -33,9 +33,9 @@ awayWinTeamsList = []
 for i in range(len(list(homeWinPercent))):
     difference = homeWinPercent[i] - awayWinPercent[i]
     if difference > 18:
-        homeWinTeamsList.append(df["Squad"][i])
+        homeWinTeamsList.append({df["Squad"][i], difference})
     elif difference < 3:
-        awayWinTeamsList.append(df["Squad"][i])
+        awayWinTeamsList.append({df["Squad"][i], difference})
 
 print(homeWinTeamsList)
 print(awayWinTeamsList)
